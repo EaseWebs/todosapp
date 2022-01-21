@@ -6,7 +6,7 @@ import './App.css'
 import TodoContainer from './functionbased/components/TodoContainer'
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <TodoContainer />
     </Router>
   </React.StrictMode>,
